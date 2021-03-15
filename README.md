@@ -4,7 +4,7 @@ CRC prediction models based on functional profiling of gut microbiome
 ## Set-up & Data preparation
 
 1. import_feat_suffix()
-2. remove_anme_and_export()
+2. remove_name_and_export()
 3. 
 
 ## Custom functions
