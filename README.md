@@ -13,5 +13,5 @@ CRC prediction models based on functional profiling of gut microbiome
 | --- | --- |
 | `load_kegg()` | Import feature table with KEGG annotations (`"kegg"` can be substituted with `"pfam"`, `"eggnog"`, `"level4ec"` & `"go"` as required) |
 | `load_meta()` | Import metadata file |
-| `import_feat_suffix(filename, suffix)` | Import feature table & attach suffix (e.g. `import_feat_suffix("kegg_relab.tsv", kegg) |
+| `import_feat_suffix(filename, suffix)` | Import feature table & attach suffix (e.g. `import_feat_suffix("kegg_relab.tsv", kegg)` |
 | `load_meta()` | Import metadata file |
