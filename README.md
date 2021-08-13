@@ -1,10 +1,11 @@
 # CRC_MasterThesis
 
-<i> #### “Evaluation of early-stage detection of colorectal cancer using machine learning models based on functional profiling of human gut microbiome” </i> 
+<i> “Evaluation of early-stage detection of colorectal cancer using machine learning models based on functional profiling of human gut microbiome” </i> 
 
-### Summary
+### Background
 CRC prediction models based on functional profiling of gut microbiome
-### Method
+
+### Results
 
 ### Conclusion
 
