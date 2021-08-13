@@ -13,7 +13,7 @@ CRC prediction models based on functional profiling of gut microbiome
 
 ### 1. Data collection & processing
 
-[HUMAnN 3.0] (https://github.com/biobakery/humann)
+[HUMAnN 3.0](https://github.com/biobakery/humann)
 
 ### 2. Metadata and feature table preparation
 
