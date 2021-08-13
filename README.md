@@ -3,9 +3,9 @@ CRC prediction models based on functional profiling of gut microbiome
 
 ## Workflow
 
-### 1.
+### 1. Data collection & processing
 
-### 2. Data preparation
+### 2. Metadata and feature table preparation
 
 ### 3. Explorative analysis (ampvis2)
 
