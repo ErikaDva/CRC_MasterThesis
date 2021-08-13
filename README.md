@@ -1,6 +1,18 @@
 # CRC_MasterThesis
 CRC prediction models based on functional profiling of gut microbiome
 
+# Workflow
+
+## 1.
+
+## 2. Data preparation
+
+## 3. Explorative analysis (ampvis2)
+
+## 4. Association testing
+
+## 5. Machine learning models
+
 ## Set-up & Data preparation
 
 1. import_feat_suffix()
