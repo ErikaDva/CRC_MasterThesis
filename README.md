@@ -19,6 +19,8 @@ CRC prediction models based on functional profiling of gut microbiome
 
 ### 3. Explorative analysis (ampvis2)
 
+[amppvis2](https://madsalbertsen.github.io/ampvis2/index.html)
+
 ### 4. Association testing
 
 ### 5. Machine learning models
