@@ -15,6 +15,10 @@ CRC prediction models based on functional profiling of gut microbiome
 
 Functional profiles of high-quality metagenomic shotgun sequences were determined using [HUMAnN 3.0](https://github.com/biobakery/humann) [(Francesco _et al.,_ 2020)](https://elifesciences.org/articles/65088).
 
+```bash
+humann.sh
+```
+
 ### 2. Metadata and feature table preparation
 
 ### 3. Explorative analysis (ampvis2)
