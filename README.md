@@ -28,7 +28,7 @@ The publicly available raw sequencing data from CRC studies were used in this an
 | Yu _et al.,_ 2015 | China | PRJEB12449 |
 | Zeller _et al.,_ 2014 | France | ERP005534 |
 
-#### 1.2 
+#### 1.2 Raw data pre-processing
 
 
 #### 1.3 Functional profiling
