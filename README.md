@@ -47,7 +47,7 @@ Taxonomic profiles
 
 ### 3. Explorative analysis (ampvis2)
 
-[ampvis2](https://madsalbertsen.github.io/ampvis2/index.html)
+[ampvis2](https://madsalbertsen.github.io/ampvis2/index.html) package was utilised for explorative analysis of functional and taxonomic feature tables. The package was originally developed for visualing amplicon data, however, it is capable of dealing with shotgun metagenomics data.
 
 ### 4. Association testing
 
