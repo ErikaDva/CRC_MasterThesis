@@ -15,15 +15,16 @@ CRC prediction models based on functional profiling of gut microbiome
 
 #### 1.1 Data availability
 
-| Study | ENA |
-| --- | --- |
-| Yu _et al.,_ 2015 | PRJEB12449 |
-| Feng _et al.,_ 2015 | ERP008729 |
-|  |  |
-|  |  |
-| Gupta _et al.,_ 2019 | PRJNA53127 |
-| Wirbel _et al.,_ 2019 | PRJEB27928 |
-| Zeller _et al.,_ 2014 | ERP005534 |
+| Study | Country | ENA |
+| --- | --- | --- |
+| Feng _et al.,_ 2015 | Austria | ERP008729 |
+| Gupta _et al.,_ 2019 | India | PRJNA53127 |
+| Yamada _et al.,_ 2019 | Japan | DRA006684 & DRA008156 |
+| Yu _et al.,_ 2015 | China | PRJEB12449 |
+| Vogtmann _et al.,_ 2016 | USA | PRJEB12449 |
+| Thomas _et al.,_ 2019 | Italy | SRP136711 |
+| Wirbel _et al.,_ 2019 | Germany | PRJEB27928 |
+| Zeller _et al.,_ 2014 | France | ERP005534 |
 
 #### 1.2 
 
