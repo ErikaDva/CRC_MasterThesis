@@ -47,9 +47,15 @@ Taxonomic profiles
 
 ### 3. Explorative analysis (ampvis2)
 
-[ampvis2](https://madsalbertsen.github.io/ampvis2/index.html) package was utilised for explorative analysis of functional and taxonomic feature tables. The package was originally developed for visualing amplicon data, however, it is capable of dealing with shotgun metagenomics data.
+R package, [ampvis2](https://madsalbertsen.github.io/ampvis2/index.html), was utilised for explorative analysis of functional and taxonomic feature tables. The package was originally developed for visualing amplicon data, however, it is capable of dealing with shotgun metagenomics data.
 
 ### 4. Association testing
+
+#### 4.1 SIAMCAT/Wirbel
+
+#### 4.2 MaAsLin2
+
+R package, [MaAslin2](https://huttenhower.sph.harvard.edu/maaslin/), was used to determine multivariable associations between metadata and microbial features [(Mallick _et al.,_ 2021)](https://doi.org/10.1186/s13059-021-02306-1). It is based on general linear models.
 
 ### 5. Machine learning models
 
