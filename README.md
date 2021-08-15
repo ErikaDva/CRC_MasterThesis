@@ -13,6 +13,18 @@ CRC prediction models based on functional profiling of gut microbiome
 
 ### 1. Data collection & processing
 
+#### 1.1 Data availability
+
+| Study | ENA |
+| --- | --- |
+| Yu _et al.,_ 2015 | PRJEB12449 |
+| Feng _et al.,_ 2015 | ERP008729 |
+|  |  |
+|  |  |
+| Gupta _et al.,_ 2019 | PRJNA53127 |
+| Wirbel _et al.,_ 2019 | PRJEB27928 |
+| Zeller _et al.,_ 2014 | ERP005534 |
+
 Functional profiles of high-quality metagenomic shotgun sequences were determined using [HUMAnN 3.0](https://github.com/biobakery/humann) [(Francesco _et al.,_ 2020)](https://elifesciences.org/articles/65088).
 
 ```bash
