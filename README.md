@@ -53,7 +53,7 @@ Taxonomic profiles
 
 ### 5. Machine learning models
 
-Machine learning models were built using [SIAMCAT](https://siamcat.embl.de/) pipeline [(Wirbel _et al.,_ 2021)](https://doi.org/10.1186/s13059-021-02306-1).
+Machine learning models were built using [SIAMCAT](https://siamcat.embl.de/) pipeline for associations between gut microbiome and host phenotype [(Wirbel _et al.,_ 2021)](https://doi.org/10.1186/s13059-021-02306-1).
 
 #### 5.1 LASSO
 
