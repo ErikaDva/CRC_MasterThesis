@@ -34,13 +34,14 @@ The publicly available raw sequencing data from CRC studies were used in this an
 #### 1.3 Functional profiling
 Functional profiles of high-quality metagenomic shotgun sequences were determined using [HUMAnN 3.0](https://github.com/biobakery/humann) [(Francesco _et al.,_ 2020)](https://elifesciences.org/articles/65088).
 
+```bash
+humann.sh
+```
+
 #### 1.4 Taxonomic profiling
 
 Taxonomic profiles
 
-```bash
-humann.sh
-```
 
 ### 2. Metadata and feature table preparation
 
