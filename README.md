@@ -15,7 +15,7 @@ CRC prediction models based on functional profiling of gut microbiome
 
 #### 1.1 Data availability
 
-The publicly available raw sequencing data from CRC studies were used in this analysis and are available from the European Nucleotide Archive (ENA). The metadata was acquired according to the location provided by the researchers in their papers.
+The publicly available raw sequencing data from CRC studies were used in this analysis and are available from the European Nucleotide Archive (ENA). The metadata for each study was obtained according to the information provided by the researchers in their papers.
 
 | Study | Country | ENA |
 | --- | --- | --- |
