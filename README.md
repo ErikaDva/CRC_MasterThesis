@@ -63,8 +63,10 @@ Taxonomic profiles
 
 #### 2.2 Feature tables
 
+
+
 ```R
-2.1_prepare_functional_data.R
+2_1_prepare_functional_data.R
 2.2_prepare_pathway_data.R
 2.3_prepare_taxonomic_data.R
 ```
