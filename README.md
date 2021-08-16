@@ -29,6 +29,10 @@ This folder contains data & other relevant information:
 
 This folder contains the generated figures.
 
+#### Models
+
+This folder contains models based on each feature category. Models are saved as R objects and can be loaded to R environment without re-running the script.
+
 #### Scripts
 
 This folder contains the source code used in this project.
