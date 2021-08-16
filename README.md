@@ -65,8 +65,8 @@ Taxonomic profiles
 
 
 Multi-sequenced samples were merged together taking into the account the library sizes using these scripts:
-[`2.1_prepare_functional_data.R`\](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)
-[`2.2_prepare_pathway_data.R`\](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)
+[`2.1_prepare_functional_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
+[`2.2_prepare_pathway_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
 [`2.3_prepare_taxonomic_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)
 
 ### 3. Explorative analysis (ampvis2)
