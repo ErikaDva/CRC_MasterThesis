@@ -9,6 +9,16 @@ CRC prediction models based on functional profiling of gut microbiome
 
 ### Conclusion
 
+## Repository structure
+
+This repository contains the code and brief description of the workflow used for the CRC microbiome analysis in Master's thesis that was undertaken at the [Albertsen lab](https://albertsenlab.org/) (AAU).
+
+#### Files
+
+#### Data
+
+#### Scripts
+
 ## Workflow
 
 ### 1. Data collection & processing
