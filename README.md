@@ -67,7 +67,7 @@ Taxonomic profiles
 Multi-sequenced samples were merged together taking into the account the library sizes using these scripts:
 `2.1_prepare_functional_data.R`\
 `2.2_prepare_pathway_data.R`\
-`2.3_prepare_taxonomic_data.R`\
+`2.3_prepare_taxonomic_data.R`
 
 ### 3. Explorative analysis (ampvis2)
 
