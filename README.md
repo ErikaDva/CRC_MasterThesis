@@ -19,7 +19,7 @@ This repository contains the code and brief description of the workflow used for
 
 #### Data
 
-This folder contains files & other relevant information:
+This folder contains data & other relevant information:
 * Feature tables
 * Metadata
 * Library sizes
