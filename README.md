@@ -49,7 +49,7 @@ The publicly available raw sequencing data from CRC studies were used in this an
 Functional profiles of high-quality metagenomic shotgun sequences were determined using [HUMAnN 3.0](https://github.com/biobakery/humann) [(Francesco _et al.,_ 2020)](https://elifesciences.org/articles/65088).
 
 ```bash
-humann.sh
+bash humann.sh
 ```
 
 #### 1.4 Taxonomic profiling
@@ -64,12 +64,10 @@ Taxonomic profiles
 #### 2.2 Feature tables
 
 
-
-```R
-2_1_prepare_functional_data.R
-2.2_prepare_pathway_data.R
-2.3_prepare_taxonomic_data.R
-```
+Multi-sequenced samples were merged together taking into the account the library sizes using these scripts:
+`2.1_prepare_functional_data.R`
+`2.2_prepare_pathway_data.R`
+`2.3_prepare_taxonomic_data.R`
 
 ### 3. Explorative analysis (ampvis2)
 
