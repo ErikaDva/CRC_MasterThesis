@@ -19,6 +19,8 @@ This repository contains the code and brief description of the workflow used for
 
 #### Data
 
+#### Figures
+
 #### Scripts
 
 ## Workflow
