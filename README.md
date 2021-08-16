@@ -69,6 +69,10 @@ Multi-sequenced samples were merged together taking into the account the library
 `2.2_prepare_pathway_data.R`\
 `2.3_prepare_taxonomic_data.R`
 
+or
+
+[`2.1_prepare_functional_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)
+
 ### 3. Explorative analysis (ampvis2)
 
 R package, [ampvis2](https://madsalbertsen.github.io/ampvis2/index.html), was utilised for explorative analysis of functional and taxonomic feature tables. The package was originally developed for visualing amplicon data, however, it is capable of dealing with shotgun metagenomics data.
