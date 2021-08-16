@@ -27,7 +27,11 @@ This folder contains data & other relevant information:
 
 #### Figures
 
+This folder contains the generated figures.
+
 #### Scripts
+
+This folder contains the source code used in this project.
 
 ## Workflow
 
