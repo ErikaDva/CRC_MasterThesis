@@ -59,6 +59,16 @@ Taxonomic profiles
 
 ### 2. Metadata and feature table preparation
 
+#### 2.1 Metadata
+
+#### 2.2 Feature tables
+
+```R
+2.1_prepare_functional_data.R
+2.2_prepare_pathway_data.R
+2.3_prepare_taxonomic_data.R
+```
+
 ### 3. Explorative analysis (ampvis2)
 
 R package, [ampvis2](https://madsalbertsen.github.io/ampvis2/index.html), was utilised for explorative analysis of functional and taxonomic feature tables. The package was originally developed for visualing amplicon data, however, it is capable of dealing with shotgun metagenomics data.
