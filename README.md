@@ -49,11 +49,11 @@ The publicly available raw sequencing data from CRC studies were used in this an
 
 | Study | Country | Accession number(s) |
 | --- | --- | --- |
-| Feng _et al.,_ 2015 | Austria | ERP008729 |
-| Gupta _et al.,_ 2019 | India | PRJNA53127 |
-| Yamada _et al.,_ 2019 | Japan | DRA006684 & DRA008156 |
-| Thomas _et al.,_ 2019 | Italy | SRP136711 |
-| Vogtmann _et al.,_ 2016 | USA | PRJEB12449 |
+| Feng _et al.,_ 2015 | Austria | [ERP008729](https://www.ebi.ac.uk/ena/browser/view/ERP008729) |
+| Gupta _et al.,_ 2019 | India | [PRJNA53127](https://www.ebi.ac.uk/ena/browser/view/PRJNA53127) |
+| Yamada _et al.,_ 2019 | Japan | [DRA006684](https://www.ebi.ac.uk/ena/browser/view/DRA006684) & [DRA008156](https://www.ebi.ac.uk/ena/browser/view/DRA008156) |
+| Thomas _et al.,_ 2019 | Italy | [SRP136711](https://www.ebi.ac.uk/ena/browser/view/SRP136711) |
+| Vogtmann _et al.,_ 2016 | USA | [PRJEB12449](https://www.ebi.ac.uk/ena/browser/view/PRJEB12449) |
 | Wirbel _et al.,_ 2019 | Germany | [PRJEB27928](https://www.ebi.ac.uk/ena/browser/view/PRJEB27928) |
 | Yu _et al.,_ 2015 | China | [PRJEB12449](https://www.ebi.ac.uk/ena/browser/view/PRJEB12449) |
 | Zeller _et al.,_ 2014 | France | [ERP005534](https://www.ebi.ac.uk/ena/browser/view/ERP005534) |
