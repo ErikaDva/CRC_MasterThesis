@@ -43,7 +43,7 @@ This folder contains the source code used in this project.
 
 #### 1.1 Data availability
 
-The publicly available raw sequencing data from CRC studies were used in this analysis and are available from the European Nucleotide Archive (ENA). The metadata for each study was obtained according to the information provided by the researchers in their papers.
+The publicly available raw sequencing data from CRC studies were used in this analysis and are available from the European Nucleotide Archive (ENA).
 
 | Study | Country | ENA |
 | --- | --- | --- |
@@ -55,6 +55,8 @@ The publicly available raw sequencing data from CRC studies were used in this an
 | Wirbel _et al.,_ 2019 | Germany | PRJEB27928 |
 | Yu _et al.,_ 2015 | China | PRJEB12449 |
 | Zeller _et al.,_ 2014 | France | ERP005534 |
+
+>Note: The list of all studies including metadata was retrieved and modified from [Wirbel _et al.,_ 2021](https://doi.org/10.1186/s13059-021-02306-1). The metadata from Gupta _et al.,_ 2019 and Yamada _et al.,_ 2019 was obtained according to the information provided by the researchers in their papers.
 
 #### 1.2 Raw data pre-processing
 
