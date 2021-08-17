@@ -56,7 +56,7 @@ The publicly available raw sequencing data from CRC studies were used in this an
 | Yu _et al.,_ 2015 | China | PRJEB12449 |
 | Zeller _et al.,_ 2014 | France | ERP005534 |
 
->Note: The list of all studies including metadata was retrieved and modified from [Wirbel _et al.,_ 2021](https://doi.org/10.1186/s13059-021-02306-1). The metadata from Gupta _et al.,_ 2019 and Yamada _et al.,_ 2019 was obtained according to the information provided by the researchers in their papers.
+>Note: The list of all studies including metadata was retrieved and modified from [Wirbel _et al.,_ 2021](https://doi.org/10.1186/s13059-021-02306-1). The metadata from Gupta _et al.,_ 2019 and Yamada _et al.,_ 2019 was seperately obtained according to the information provided by the researchers in their papers.
 
 #### 1.2 Raw data pre-processing
 
