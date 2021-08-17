@@ -43,18 +43,20 @@ This folder contains the source code used in this project.
 
 #### 1.1 Data availability
 
-The publicly available raw sequencing data from CRC studies were used in this analysis and are available from the European Nucleotide Archive (ENA).
+The publicly available raw sequencing data from CRC studies were used in this analysis and are available on the European Nucleotide Archive (ENA) at EMBL-EBI.
 
-| Study | Country | ENA |
+“the data for this study have been deposited in the European Nucleotide Archive (ENA) at EMBL-EBI under accession number PRJEBxxxx (https://www.ebi.ac.uk/ena/browser/view/PRJEB27928).”
+
+| Study | Country | Accession number(s) |
 | --- | --- | --- |
 | Feng _et al.,_ 2015 | Austria | ERP008729 |
 | Gupta _et al.,_ 2019 | India | PRJNA53127 |
 | Yamada _et al.,_ 2019 | Japan | DRA006684 & DRA008156 |
 | Thomas _et al.,_ 2019 | Italy | SRP136711 |
 | Vogtmann _et al.,_ 2016 | USA | PRJEB12449 |
-| Wirbel _et al.,_ 2019 | Germany | PRJEB27928 |
-| Yu _et al.,_ 2015 | China | PRJEB12449 |
-| Zeller _et al.,_ 2014 | France | ERP005534 |
+| Wirbel _et al.,_ 2019 | Germany | [PRJEB27928](https://www.ebi.ac.uk/ena/browser/view/PRJEB27928) |
+| Yu _et al.,_ 2015 | China | [PRJEB12449](https://www.ebi.ac.uk/ena/browser/view/PRJEB12449) |
+| Zeller _et al.,_ 2014 | France | [ERP005534](https://www.ebi.ac.uk/ena/browser/view/ERP005534) |
 
 >Note: The list of all studies including metadata was retrieved and modified from [Wirbel _et al.,_ 2021](https://doi.org/10.1186/s13059-021-02306-1). The metadata from Gupta _et al.,_ 2019 and Yamada _et al.,_ 2019 was seperately obtained according to the information provided by the researchers in their papers.
 
