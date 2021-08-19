@@ -98,6 +98,8 @@ Firstly, multi-sequenced samples were merged together taking into the account th
 [`2.2_prepare_gene_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
 [`2.2_prepare_taxonomic_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)
 
+>Note: exception with CN-CRC study as the numbner of samples matches the metadata entries
+
 Secondly, the feature tables were cleaned and filtered to remove low-abundant features:  
 [`2.2_clean_functional_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
 [`2.2_clean_pathway_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
