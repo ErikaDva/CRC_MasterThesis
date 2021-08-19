@@ -95,6 +95,7 @@ The feature tables produced by [HUMAnN 3.0](https://github.com/biobakery/humann)
 Firstly, multi-sequenced samples were merged together taking into the account the library sizes using these scripts:  
 [`2.2_prepare_functional_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
 [`2.2_prepare_pathway_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
+[`2.2_prepare_gene_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
 [`2.2_prepare_taxonomic_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)
 
 Secondly, the feature tables were cleaned and filtered to remove low-abundant features:  
