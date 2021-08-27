@@ -50,7 +50,7 @@ The publicly available raw sequencing data from CRC studies were used in this an
 | Study | Country | Accession number(s) |
 | --- | --- | --- |
 | Feng _et al.,_ 2015 | Austria | [ERP008729](https://www.ebi.ac.uk/ena/browser/view/ERP008729) |
-| Gupta _et al.,_ 2019 | India | FIX LINK![PRJNA53127]() |
+| Gupta _et al.,_ 2019 | India | [PRJNA531273](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA531273) & [PRJNA39711](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA397112) |
 | Yachida _et al.,_ 2019 | Japan | [DRA006684](https://www.ebi.ac.uk/ena/browser/view/DRA006684) & [DRA008156](https://www.ebi.ac.uk/ena/browser/view/DRA008156) |
 | Thomas _et al.,_ 2019 | Italy | [SRP136711](https://www.ebi.ac.uk/ena/browser/view/SRP136711) |
 | Vogtmann _et al.,_ 2016 | USA | [PRJEB12449](https://www.ebi.ac.uk/ena/browser/view/PRJEB12449) |
