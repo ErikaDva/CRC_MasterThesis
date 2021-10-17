@@ -5,11 +5,15 @@
 <i> “Investigation of early-stage detection of colorectal cancer using machine learning models based on functional profiling of the human gut microbiome” </i> 
 
 ### Background
-CRC prediction models based on functional profiling of gut microbiome
+CRC prediction models based on functional profiling of gut microbiome.
 
 ### Results
 
+_TBU_
+
 ### Conclusion
+
+_TBU_
 
 ## Repository structure
 
@@ -49,8 +53,6 @@ This folder contains the source code used in this project.
 #### 1.1 Data availability
 
 The publicly available raw sequencing data from CRC studies were used in this analysis and are available on the European Nucleotide Archive (ENA) at EMBL-EBI.
-
-“the data for this study have been deposited in the European Nucleotide Archive (ENA) at EMBL-EBI under accession number PRJEBxxxx (https://www.ebi.ac.uk/ena/browser/view/PRJEB27928).”
 
 | Study | Country | Accession number(s) |
 | --- | --- | --- |
