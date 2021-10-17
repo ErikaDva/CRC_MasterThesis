@@ -1,14 +1,13 @@
 #!/bin/bash
 module load HUManN/3.0.0a4-foss-2020b-Python-3.8.6
 
-# 1. Run HUMAnN3 with MetaPhlAn output files
+# Run HUMAnN3 with MetaPhlAn output files
 start=`date +%s`
 n=1
 
-echo "missing_files" > missing_files60.txt
+echo "missing_files" > missing_files.txt
 
-#files=$(ls /srv/MA/users/sdall16/data/fastq_files/processed_fastq/processed/*_1.fastq.gz | cat | head -n 20)
-cat ../humann/mpa60x.txt | while read f
+cat ../humann/all_metaphlan_paths.txt | while read f
 #for f in $files
     do
     bn=$(basename ${f%_sorted_1.fastq.gz})
@@ -26,9 +25,9 @@ echo "$f" >> missing_files.txt
 fi
 done
 
-
 end=`date +%s`
 runtime=$((end-start))
 
 printf "\n Total runtime: $runtime "
 
+module purge
