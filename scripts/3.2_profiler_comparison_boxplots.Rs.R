@@ -38,20 +38,19 @@ meta.all <- read_tsv(file = '../data/meta/meta.crc.tsv')
 study <- meta.all %>% select(c(Sample_ID, Study))
 
 # ##############################################################################
-# Counting features
+# Counting features (c
 
-temp <- t(species_relab)
+temp <- t(species_relab) # change the profiler
 temp <- as.data.frame(temp)
-temp$MetaPhlAn3 <- rowSums(temp>0)
-temp <- temp %>% rownames_to_column("Sample_ID") %>% select(c(Sample_ID, MetaPhlAn3))
+temp$MetaPhlAn3 <- rowSums(temp>0) # choose an appropriate column name
+temp <- temp %>% rownames_to_column("Sample_ID") %>% select(c(Sample_ID, MetaPhlAn3)) # extract Sample_ID and number of features
 
-# start
+# start of initial table
 all.counts <- inner_join(study, temp, by = "Sample_ID")
 
-# appending other categories
+# appending other categories to the initial table
 all.counts <- inner_join(all.counts, temp, by = "Sample_ID")
 write.table(all.counts, "../all.counts.tsv")
-summary(all.counts$KEGG)
 
 # ##############################################################################
 # Generating boxplots
