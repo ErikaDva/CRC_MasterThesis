@@ -42,7 +42,11 @@ This folder contains models based on each feature category. Models are saved as 
 
 #### Scripts
 
-This folder contains the source code used in this project.
+This folder contains the source code used in this project for analysis carried out in RStudio.
+
+#### Bash Scripts
+
+This folder contains the source code used in this project for analysis carried out using command line.
 
 >\* Files too large to be uploaded in this repository
 
