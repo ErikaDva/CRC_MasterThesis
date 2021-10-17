@@ -93,6 +93,8 @@ bash mpa.sh
 
 ### 2. Metadata and feature table preparation
 
+The metadata and feature table preparation was carried out in RStudio using R.
+
 #### 2.1 Metadata
 
 The metadata was retrieved and modified from [Wirbel _et al.,_ 2019](https://doi.org/10.1038/s41591-019-0406-6). The metadata from Gupta _et al.,_ 2019 and Yamada _et al.,_ 2019 were seperately obtained according to the information provided by the researchers in their papers.
