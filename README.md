@@ -77,8 +77,11 @@ bash humann.sh
 
 #### 1.4 Taxonomic profiling
 
-Taxonomic profiles
+Taxonomic profiles with MetaPhlAn 3.0
 
+```bash
+bash mpa.sh
+```
 
 ### 2. Metadata and feature table preparation
 
