@@ -35,18 +35,11 @@ meta.all <- read_delim("../data/meta/meta.crc.tsv",
                        trim_ws = TRUE)
 
 # ##############################################################################
-# Remove UNKNOWN reads
-
-#feat <- feat.path[c(-1,-2),]
-feat <- feat.species
-# ##############################################################################
 # Filter low abundant features
 
 library(matrixStats)
 
-### Gene families
-
-#feat.matrix <- as.matrix(feat)
+feat.matrix <- as.matrix(feat)
 
 temp.max.ab <- sapply(unique(meta.all$Group), FUN=function(s){
   rowMaxs(feat.matrix[,meta.all %>% filter(Group == s) %>% pull(Sample_ID)])
