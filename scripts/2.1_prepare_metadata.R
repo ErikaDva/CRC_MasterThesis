@@ -301,25 +301,14 @@ meta.all.stages.crc <- meta.all.stages %>%
   filter(Sample_ID != "MG100183") %>% 
   filter(Sample_ID != c("SAMEA3136751", "MMRS68910755ST-27-0-0")) # missing stage information
 
+# Checks
 levels(as.factor(meta.all.stages.crc$AJCC_stage))
 levels(as.factor(meta.all.stages.crc$Group_full))
-
-# IT-CRC fully missing stage information
-
-  # Checks
 levels(as.factor(meta.all.stages.crc$Study))
 levels(as.factor(meta.all.stages.crc$Group))
 
 # CRC metadata checks
 print(table(meta.all.stages.crc$Group, meta.all.stages.crc$Study))
-
-# Inspecting AT-CRC for missing stage information
-#meta.at <- meta.all.stages.crc[meta.all.stages.crc$Study %in% "AT-CRC", ]
-#meta.at.crc <- meta.at[meta.at$Group %in% "CRC", ]
-#view(meta.at.crc)
-# Sample_ID: SAMEA3136751 has no stage for CRC (will need to be removed) & not available on SRA run selector
-
-#meta.all.stages.crc <- meta.all.stages.crc %>% filter(Sample_ID != "SAMEA3136751")
 
 ############################### SAVE METADATA ##################################
 
