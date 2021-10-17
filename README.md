@@ -52,7 +52,7 @@ This folder contains the source code used in this project.
 
 #### 1.1 Data availability
 
-The publicly available raw sequencing data from CRC studies were used in this analysis and are available on the European Nucleotide Archive (ENA) at EMBL-EBI.
+The publicly available raw sequencing data from CRC studies were used in this analysis and are available on the European Nucleotide Archive (ENA) at EMBL-EBI except for the Indian cohort, which was downloaded from the NCBI BioProject database.
 
 | Study | Country | Accession number(s) |
 | --- | --- | --- |
