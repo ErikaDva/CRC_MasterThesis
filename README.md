@@ -119,9 +119,8 @@ Firstly, multi-sequenced samples were merged together taking into the account th
 >Note: exception with CN-CRC study as the number of samples matches the metadata entries
 
 Secondly, the feature tables were cleaned and filtered to remove low-abundant features:  
-[`2.2_clean_functional_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
-[`2.2_clean_pathway_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
-[`2.2_clean_taxonomic_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)
+[`2.3_clean_functional_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/2.3_clean_functional_data.R)\
+[`2.3_clean_taxonomic_data.R`]https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/2.3_clean_taxonomic_data.R)
 
 ### 3. Explorative analysis
 
