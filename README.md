@@ -126,9 +126,17 @@ R package, [MaAslin2](https://huttenhower.sph.harvard.edu/maaslin/), was used to
 
 Machine learning models were built using [SIAMCAT](https://siamcat.embl.de/) pipeline for associations between gut microbiome and host phenotype [(Wirbel _et al.,_ 2021)](https://doi.org/10.1186/s13059-021-02306-1).
 
-#### 5.1 LASSO
+#### LASSO
 
-#### 5.2 Random Forest
+The machine learning scripts were run in the following order:
+
+5.1_train_models_species.R
+5.1_train_models_functions.R
+
+5.2_model_predictions.R
+
+5.3_ml_figures.R
+
 
 ### Set-up & Data preparation
 
