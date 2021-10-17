@@ -145,7 +145,7 @@ The machine learning scripts were run in the following order:
 4.3_ml_figures.R
 
 ## Contact
-E-mail: [Erika Dvarionaite](mailto:erika.dvarionaite@outlook.com)
+E-mail: [Erika Dvarionaite](mailto:erika.dvarionaite@outlook.com)  
 Twitter: [erika_dva](https://twitter.com/erika_dva)
 
 
