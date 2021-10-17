@@ -19,12 +19,12 @@ _TBU_
 
 This repository contains the code and brief description of the workflow used for the CRC microbiome analysis in Master's thesis that was undertaken at the [Albertsen lab](https://albertsenlab.org/) (AAU).
 
-#### Files
+#### Files (TBU)
 
 This folder contains generated files in this analysis:
 * e.g. `predictions_lasso.tsv`
 
-#### Data
+#### Data (TBU)
 
 This folder contains data & other relevant information:
 * Feature tables*
@@ -32,11 +32,11 @@ This folder contains data & other relevant information:
 * Library sizes
 * Run accessions numbers
 
-#### Figures
+#### Figures (TBU)
 
 This folder contains the generated figures.
 
-#### Models
+#### Models (TBU)
 
 This folder contains models based on each feature category. Models are saved as R objects and can be loaded to R environment without re-running the script.
 
