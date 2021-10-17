@@ -24,7 +24,8 @@ set.seed(2021)
 # ##############################################################################
 # Get data
 
-meta <- read_tsv(file = '../data/meta/meta.crc.2.tsv')
+meta <- read_tsv(file = '../data/meta/meta.crc.tsv')
+
 # ##############################################################################
 # Parameters
 
@@ -33,19 +34,16 @@ parameters <- yaml.load_file('../parameters.yaml')
 all.studies <- parameters$all.studies
 ada.studies <- parameters$ada.studies
 
-tag="level4ec"
 ml.method="lasso"
-stage="ADA"
 
 # ##############################################################################
-# Import models
+# Import models for assesment (not used in making predictions)
 
 # ADA
 models <- list()
 for (study in ada.studies){
-  tag="eggnog"
+  tag="eggnog" # change the feature tag
   stage="ADA"
-  ml.method="randomForest"
   # import all models
   mdl.path <- paste0("../models/", tag, "/", study, "_", stage, "_stage_", ml.method, "_model.RData")
   load(mdl.path)
@@ -56,7 +54,7 @@ for (study in ada.studies){
 # CRC
 models <- list()
 for (study in all.studies){
-  
+  tag="eggnog" # change the feature tag
   stage = "CRC"
   # import all models
   mdl.path <- paste0("../models/", tag, "/", study, "_", stage, "_stage_", ml.method, "_model2.RData")
@@ -65,11 +63,10 @@ for (study in all.studies){
   models[[study]] <- siamcat
 }
 
-
 # ##############################################################################
 # Make predictions
 
-tag="species" # change
+tag="species"  # change the feature tag
 ml.method = "lasso"
 
 fn.path <- paste0("../data/", tag, "/filtered_", tag, "_full.tsv")
@@ -80,7 +77,7 @@ feat.all <- read.table(fn.path,
 cat(tag, 'feature table loaded...\n')
 
 if (tag == "species") {
-  fn.path <- paste0("../data/", tag, "/filtered.", tag, ".NEW.tsv")
+  fn.path <- paste0("../data/", tag, "/filtered.", tag, ".tsv")
   feat.all <- read.table(fn.path, 
                          sep = "\t", stringsAsFactors = F, 
                          header = T, check.names = F, 
