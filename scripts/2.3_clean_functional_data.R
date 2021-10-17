@@ -34,7 +34,7 @@ memory.size(max = T)
 
 # Metadata
 
-meta.all <- read_tsv(file = '../data/meta/meta.crc.2.tsv')
+meta.all <- read_tsv(file = '../data/meta/meta.crc.tsv')
 
 # Load each feature table and filter each study individually
 
