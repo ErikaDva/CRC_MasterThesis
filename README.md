@@ -125,7 +125,7 @@ Secondly, the feature tables were cleaned and filtered to remove low-abundant fe
 #### Overview of different profilers
 
 [`3.1_profiler_comparison_combined.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/3.1_profiler_comparison_combined.R)\
-[`3.2_profiler_comparison_boxplots.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/3.2_profiler_comparison_boxplots.R.R)
+[`3.2_profiler_comparison_boxplots.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/3.2_profiler_comparison_boxplots.R)
 
 #### Ordination with ampvis2
 
@@ -140,7 +140,7 @@ Machine learning models were built using [SIAMCAT](https://siamcat.embl.de/) pip
 
 The machine learning scripts were run in the following order:
 
-[4.1_train_models_species.R](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/4_train_models.R)\
+[4.1_train_models_species.R](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/4.1_train_models.R)\
 [4.2_model_predictions.R](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/4.2_model_predictions.R)\
 [4.3_ml_figures.R](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/4.3_ml_figures.R)
 
