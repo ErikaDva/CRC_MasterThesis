@@ -76,10 +76,10 @@ for (tag in study.tag) {
     
     # Save filtered feature table
     
-  #  filtered.feat <- paste0('../data/', f.tag, '/filtered_', f.tag, '_', tag, '.tsv')
-  #  write.table(feat.filt, file=filtered.feat, quote=FALSE, sep='\t',
-  #              row.names=TRUE, col.names=TRUE)
-  #  cat(f.tag, 'has now been processed...\n')
+  filtered.feat <- paste0('../data/', f.tag, '/filtered_', f.tag, '_', tag, '.tsv')
+  write.table(feat.filt, file=filtered.feat, quote=FALSE, sep='\t',
+              row.names=TRUE, col.names=TRUE)
+  cat(f.tag, 'has now been processed...\n')
   }
   
 }
