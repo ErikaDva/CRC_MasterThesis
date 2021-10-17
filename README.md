@@ -76,6 +76,8 @@ Command line was used to pre-process raw data and to perform taxonomic and funct
 
 Bowtie2 (v.2.3.4.1) was used to align reads to the human genome (hg19) and discard contaminant reads from the host.
 
+The bash scripts can be found in [CRC_MasterThesis/bash_scripts](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/bash_scripts) folder.
+
 #### 1.3 Functional profiling
 Functional profiles of high-quality metagenomic shotgun sequences were determined using [HUMAnN 3.0](https://github.com/biobakery/humann) [(Francesco _et al.,_ 2020)](https://elifesciences.org/articles/65088).
 
