@@ -40,7 +40,7 @@ This folder contains models based on each feature category. Models are saved as 
 
 This folder contains the source code used in this project.
 
->* Files too large to be uploaded in this repository
+>\n* Files too large to be uploaded in this repository
 
 ## Workflow
 
