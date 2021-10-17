@@ -17,10 +17,13 @@ This repository contains the code and brief description of the workflow used for
 
 #### Files
 
+This folder contains generated files in this analysis:
+* e.g. `predictions_lasso.tsv`
+
 #### Data
 
 This folder contains data & other relevant information:
-* Feature tables
+* Feature tables*
 * Metadata
 * Library sizes
 * Run accessions numbers
@@ -36,6 +39,8 @@ This folder contains models based on each feature category. Models are saved as 
 #### Scripts
 
 This folder contains the source code used in this project.
+
+>* Files too large to be uploaded in this repository
 
 ## Workflow
 
