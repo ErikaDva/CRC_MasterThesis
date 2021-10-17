@@ -16,8 +16,6 @@ library(readr)
 
 # ##############################################################################
 # general 
-cat('Starting model building script\n')
-start.time <- proc.time()[1]
 
 memory.limit(56000)
 memory.size(TRUE)
@@ -74,40 +72,18 @@ if (!tag %in% c('species', 'genus')){
          direction = "absolute") #added
 }
 
-# overwrite ml method with command line argument
-#if (length(args) == 2){
-#  ml.method <- args[2]
-#}
-
-#feat.all <-  as.matrix(read.table("../data/kegg/feat.kegg.tsv", sep='\t', header=TRUE, 
-#                                  stringsAsFactors = FALSE, 
-#                                  check.names = FALSE, quote=''))
-
-meta.all <- read_tsv(file = '../data/meta/meta.crc.2.tsv')
-
-meta.all <- read_tsv(file = '../data/meta/meta.crc.2.tsv') %>% filter(Sample_ID != "SAMD00164778")
-
 # ##############################################################################
 # Get Data
-#feat.path <- paste0('../data/', tag, '/filtered.', tag, '.test.tsv')
-#feat.all <- as.matrix(read.table(feat.path, sep='\t', header=TRUE, 
-#                                 stringsAsFactors = FALSE, 
-#                                 check.names = FALSE, quote=''))
 
-#meta.all <- read_tsv('../data/meta/meta.jp.stages.tsv')
-#stopifnot(all(meta$Sample_ID %in% colnames(feat.all)))
+meta.all <- read_tsv(file = '../data/meta/meta.crc.tsv')
 
 # ##############################################################################
 # Model Building for CRC group
 
-#models <- list()
-#study="AT-CRC"
-#ml.method="randomForest"
-
 for (tag in feat.tag) {
   
-#  for (study in all.studies) {
-    study="JP-CRC"
+for (study in all.studies) {
+
     meta <- meta.all %>% filter(Study == study)
     
     if (study == "IT-CRC-2") {
@@ -125,14 +101,11 @@ for (tag in feat.tag) {
                        header = T, check.names = F, 
                        row.names = 1, quote ="", fill = F)
     
-    outlier <- "SAMD00164778" # JP-CRC outlier
-    feat.all <- feat.all %>% select(-outlier) # an outlier for JP-CRC
     cat(tag, 'feature table loaded for', study, '...\n')
-  
-    #for (stage in parameters$stages){
       
+      # single stage model (CRC)
       stage = "CRC"
-      # single stage model (ADA or CRC)
+
       meta.train <- meta %>% filter(Group %in% c("CTR", stage))
       
       feat.train <- feat.all[,meta.train %>% pull(Sample_ID)]
@@ -156,27 +129,20 @@ for (tag in feat.tag) {
                              param.fs = param.fs.ss)
       siamcat <- make.predictions(siamcat)
       siamcat <- evaluate.predictions(siamcat)
-      #models[[stage]] <- siamcat
       save(siamcat, file=paste0('../models/',tag,'/', study, '_', stage, '_stage_', 
-                                ml.method ,'_model_NEW.RData'))
+                                ml.method ,'_model.RData'))
       
       cat("Successfully trained a single stage model for", tag, study, '_', stage, '\n')
-    #}
-#  }
+  }
 }
-
-save(models, file =paste0('../models/',tag,'/all_', tag, "_", 
-                            ml.method ,'_models.RData'))
 
 # ##############################################################################
 # Model Building for ADA group
 
 ada.studies <- parameters$ada.studies
-ada.studies <- c("AT-CRC", "IT-CRC", "FR-CRC")
-feat.tag <- c("pfam", "level4ec", "go", "eggnog")
 
 models <- list()
-ml.method <- "randomForest"
+
 for (tag in feat.tag) {
   
   for (study in ada.studies) {
@@ -199,10 +165,9 @@ for (tag in feat.tag) {
                            row.names = 1, quote ="", fill = F)
     cat(tag, 'feature table loaded for', study, '...\n')
     
-    #for (stage in parameters$stages){
-    
+    # single stage model (ADA or CRC) 
     stage = "ADA"
-    # single stage model (ADA or CRC)
+
     meta.train <- meta %>% filter(Group %in% c("CTR", stage))
     
     feat.train <- feat.all[,meta.train %>% pull(Sample_ID)]
@@ -226,34 +191,13 @@ for (tag in feat.tag) {
                            param.fs = param.fs.ss)
     siamcat <- make.predictions(siamcat)
     siamcat <- evaluate.predictions(siamcat)
-    #models[[stage]] <- siamcat
     save(siamcat, file=paste0('../models/',tag,'/', study, '_', stage, '_stage_', 
                               ml.method ,'_model.RData'))
     
     cat("Successfully trained a single stage model for", tag, study, '_', stage, '\n')
-    #}
   }
 }
 
 # #######################
 # End of script
 # #######################
-
-sc.obj <- check.associations(
-  siamcat,
-  sort.by = 'fc',
-  alpha = 0.05,
-  mult.corr = "fdr",
-  detect.lim = 10 ^-6,
-  plot.type = "quantile.box",
-  feature.type = "normalized",
-  panels = c("fc", "prevalence", "auroc"))
-
-
-model.interpretation.plot(
-  siamcat,
-  fn.plot = '../interpretation.pdf',
-  consens.thres = 0.5,
-  limits = c(-3, 3),
-  heatmap.type = 'zscore',
-)
