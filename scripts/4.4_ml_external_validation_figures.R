@@ -1,7 +1,7 @@
 # ##############################################################################
 #
-##  Figure showing how well the classifier can be transferred between 
-##    different datasets
+##  External validation
+##  Figure showing how well the classifier can be transferred between different datasets
 #
 # ##############################################################################
 
@@ -23,12 +23,10 @@ parameters <- yaml.load_file('../parameters.yaml')
 
 # ##############################################################################
 # general 
-cat('Plot performance heatmap\n')
-start.time <- proc.time()[1]
 
 set.seed(2021)
 
-tag = "go"
+tag = "go" # change the profiler tag
 ml.method = "lasso"
 
 fn.pred <- paste0('../files/',tag,'/predictions_', ml.method, '.tsv')
