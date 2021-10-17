@@ -1,6 +1,6 @@
 # ######################################################################
 #
-##  4.3 Ordination figures (CCA)
+##  Explorative analysis: Ordination figures (CCA)
 #
 # ######################################################################
 
@@ -29,11 +29,11 @@ go_relab <- read.table("../data/go/filtered_go_full.tsv", sep = "\t", stringsAsF
 eggnog_relab <- read.table("../data/eggnog/filtered_eggnog_full.tsv", sep = "\t", stringsAsFactors = F, header = T, check.names = F, row.names = 1, quote ="", fill = F)
 pfam_relab <- read.table("../data/pfam/filtered_pfam_full.tsv", sep = "\t", stringsAsFactors = F, header = T, check.names = F, row.names = 1, quote ="", fill = F)
 level4ec_relab <- read.table("../data/level4ec/filtered_level4ec_full.tsv", sep = "\t", stringsAsFactors = F, header = T, check.names = F, row.names = 1, quote ="", fill = F)
-species_relab <- read.table('../data/species/filtered.species.NEW.tsv', sep = "\t", stringsAsFactors = F, header = T, check.names = F, row.names = 1, quote ="", fill = F)
-meta.all <- read_tsv(file = '../data/meta/meta.crc.2.tsv')
+species_relab <- read.table('../data/species/filtered.species.tsv', sep = "\t", stringsAsFactors = F, header = T, check.names = F, row.names = 1, quote ="", fill = F)
+meta.all <- read_tsv(file = '../data/meta/meta.crc.tsv')
 
 # ##############################################################################
-# Table preparation
+# Table preparation & removal of outliers
 
 ampvis_kegg <- kegg_relab %>% rownames_to_column(var="OTU") %>% subset(select=-SAMD00164778)
 ampvis_eggnog <- eggnog_relab %>% rownames_to_column(var="OTU") %>% subset(select=-SAMD00164778) %>% subset(select=-HP)
@@ -64,7 +64,7 @@ species <- amp_load(otutable = ampvis_species,
                     metadata = meta.all)
 
 # ##############################################################################
-# General ordination by group (groups)
+# General ordination constrained by group (can be changed to by study)
 
 species.cca <- amp_ordinate(species,
                             type = "CCA",
