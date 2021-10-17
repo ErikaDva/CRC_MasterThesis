@@ -1,0 +1,73 @@
+##
+## This file describes the parameters used in this analysis
+## 
+
+setup:
+    data.location: https://embl.de/download/zeller/crc_meta/
+    tag: 'g2_l75'
+    ab.cutoff: 1e-03
+
+# alpha
+associations:
+    alpha.meta: 1e-05
+    alpha.single.study: 0.005
+    mult.corr: 'fdr'
+    pr.cutoff: 0.05
+    log.n0: 1e-05
+    log.n0.func: 1e-08
+
+all.studies:
+    - CN-CRC
+    - US-CRC
+    - DE-CRC
+    - IT-CRC
+    - IT-CRC-2
+    - JP-CRC
+    - FR-CRC
+    - AT-CRC
+    - IN-CRC
+
+ada.studies:
+    - AT-CRC
+    - IT-CRC
+    - JP-CRC
+    - FR-CRC
+    
+# stages
+stages:
+    - ADA
+    - CRC
+
+stages.full:
+    - ADA
+    - S0
+    - S1
+    - S2
+    - S3
+    - S4
+    
+functional.feat:
+    - kegg
+    - eggnog
+    - pfam
+    - go
+    - level4ec
+    
+# model building
+model.building:
+    ab.cutoff: 1e-03
+    norm.method: 'log.std'
+    sd.min.q: 0.1
+    log.n0: 1e-05
+    log.n0.func: 1e-08
+    n.p: 2
+    norm.margin: 1
+    num.folds: 10
+    num.resample: 10
+    stratify: TRUE
+    ml.method: 'lasso'
+    modsel.crit: 'pr'
+    min.nonzero.coeff: 1
+    feature.selection:
+        type: "AUC"
+        cutoff: 800
