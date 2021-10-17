@@ -20,7 +20,7 @@ library(yaml)
 # Get data
 
 # Meta
-meta.all <- read_tsv(file = '../data/meta/meta.crc.2.tsv')
+meta.all <- read_tsv(file = '../data/meta/meta.crc.tsv')
 
 # Feature table
 fn.path <- paste0('../data/species/mpa.txt')
@@ -129,10 +129,10 @@ feat.relab <- prop.table(as.matrix(feat), 2)
 ###############################################################################
 ## Save files
 
-write.table(feat, file=paste0("../data/species/species_full_3.tsv"),
+write.table(feat, file=paste0("../data/species/species_full.tsv"),
             col.names = T, quote = F, row.names = T, sep = '\t')
 
-write.table(feat.relab, file=paste0("../data/species/species_full_relab_3.tsv"),
+write.table(feat.relab, file=paste0("../data/species/species_full_relab.tsv"),
             col.names = T, quote = F, row.names = T, sep = '\t')
 
 #################################   DONE   #####################################
