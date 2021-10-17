@@ -136,7 +136,7 @@ R package, [ampvis2](https://madsalbertsen.github.io/ampvis2/index.html), was ut
 
 Machine learning models were built using [SIAMCAT](https://siamcat.embl.de/) pipeline for associations between gut microbiome and host phenotype [(Wirbel _et al.,_ 2021)](https://doi.org/10.1186/s13059-021-02306-1). The machine learning workflow including feature filtering was adapted and tailored from an established CRC meta-analysis study [(Wirbel et al., 2019)](https://github.com/zellerlab/crc_meta).
 
-#### LASSO
+#### Logistic LASSO regression
 
 The machine learning scripts were run in the following order:
 
