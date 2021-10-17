@@ -38,7 +38,7 @@ memory.size(max = T)
 
 # Metadata
 
-meta.all <- read_tsv(file = '../data/meta/meta.crc.2.tsv')
+meta.all <- read_tsv(file = '../data/meta/meta.crc.tsv')
 feat.prof <- read_excel("C:/Users/Erika Dvarionaite/iCloudDrive/Desktop/crc_analysis/data_profiler_performance.xlsx")
 
 feat.prof.full <- t(read_excel("C:/Users/Erika Dvarionaite/iCloudDrive/Desktop/crc_analysis/data_profiler_performance_complete.xlsx"))
@@ -49,7 +49,6 @@ feat.prof.full <- feat.prof.full %>% rownames_to_column("profiler")
 
 library(reshape2)
 feat.prof.full <- melt(feat.prof.full, id.vars="profiler")
-
 
 # Number of mapped features 
 
