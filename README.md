@@ -146,6 +146,7 @@ The machine learning scripts were run in the following order:
 
 ## Contact
 E-mail: [Erika Dvarionaite](mailto:erika.dvarionaite@outlook.com)
+Twitter: [erika_dva](https://twitter.com/erika_dva)
 
 
 Extra
