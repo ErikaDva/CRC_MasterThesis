@@ -1,6 +1,6 @@
 # ######################################################################
 #
-##  4.2.3 Model evaluation 
+##  Model evaluation 
 #
 # ######################################################################
 
@@ -24,40 +24,21 @@ memory.size(TRUE)
 
 # INDIAN
 load("C:/Users/Erika Dvarionaite/iCloudDrive/Desktop/crc_analysis/models/go/IN-CRC_CRC_stage_lasso_model.RData")
+siamcat_in <- siamcat
 
-# GERMAN
+# US
 load("C:/Users/Erika Dvarionaite/iCloudDrive/Desktop/crc_analysis/models/go/US-CRC_CRC_stage_lasso_model.RData")
+siamcat_us <- siamcat
 
-load("C:/Users/Erika Dvarionaite/iCloudDrive/Desktop/crc_analysis/models/KEGG/IT-CRC-2_CRC_stage_lasso_model.RData")
+# Generating ROC curves
 
-sc.obj <- check.associations(
-  siamcat,
-  sort.by = 'fc',
-  alpha = 0.05,
-  mult.corr = "fdr",
-  detect.lim = 10 ^-6,
-  plot.type = "quantile.box",
-  feature.type = "normalized",
-  panels = c("fc", "prevalence", "auroc"))
+model.evaluation.plot(siamcat_in, fn.plot = "../figures/models/evaluation/ROC_IN.pdf")
+model.evaluation.plot(siamcat_us, fn.plot = "../figures/models/evaluation/ROC_US.pdf")
 
+# Generating model interpretation plots
 
 model.interpretation.plot(
-  siamcat,
-  fn.plot = '../interpretation.pdf',
-  consens.thres = 0.5,
-  limits = c(-3, 3),
-  heatmap.type = 'zscore',
-)
-
-check.confounders(siamcat)
-
-sc.obj <-  evaluate.predictions(siamcat)
-model.evaluation.plot(sc.obj, fn.plot = "../figures/models/evaluation/ROC_JP.pdf")
-model.evaluation.plot(sc.obj, fn.plot = "../figures/models/evaluation/ROC_IN.pdf")
-model.evaluation.plot(siamcat, fn.plot = "../figures/models/evaluation/ROC_FR_egg_ADA2.pdf")
-
-model.interpretation.plot(
-  sc.obj,
+  siamcat_in,
   fn.plot = '../figures/models/evaluation/IN_eval.pdf',
   consens.thres = 0.5,
   limits = c(-3, 3),
@@ -65,16 +46,8 @@ model.interpretation.plot(
 )
 
 model.interpretation.plot(
-  sc.obj,
+  siamcat_us,
   fn.plot = '../figures/models/evaluation/JP_eval.pdf',
-  consens.thres = 0.5,
-  limits = c(-3, 3),
-  heatmap.type = 'zscore',
-)
-
-model.interpretation.plot(
-  sc.obj,
-  fn.plot = '../figures/models/evaluation/IT2_eval.pdf',
   consens.thres = 0.5,
   limits = c(-3, 3),
   heatmap.type = 'zscore',
