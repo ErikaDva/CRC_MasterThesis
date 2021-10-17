@@ -123,19 +123,17 @@ Secondly, the feature tables were cleaned and filtered to remove low-abundant fe
 [`2.2_clean_pathway_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)\
 [`2.2_clean_taxonomic_data.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/test)
 
-### 3. Explorative analysis (ampvis2)
+### 3. Explorative analysis
+
+#### Overview of different profilers
+
+#### Ordination with ampvis2
 
 R package, [ampvis2](https://madsalbertsen.github.io/ampvis2/index.html), was utilised for explorative analysis of functional and taxonomic feature tables. The package was originally developed for visualing amplicon data, however, it is capable of dealing with shotgun metagenomics data.
 
-### 4. Association testing
+[`3_explorative_analysis_ampvis2.R)`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/3_explorative_analysis_ampvis2.R)
 
-#### 4.1 SIAMCAT/Wirbel
-
-#### 4.2 MaAsLin2
-
-R package, [MaAslin2](https://huttenhower.sph.harvard.edu/maaslin/), was used to determine multivariable associations between metadata and microbial features [(Mallick _et al.,_ 2021)](https://doi.org/10.1186/s13059-021-02306-1). It is based on general linear models.
-
-### 5. Machine learning models
+### 4. Machine learning models
 
 Machine learning models were built using [SIAMCAT](https://siamcat.embl.de/) pipeline for associations between gut microbiome and host phenotype [(Wirbel _et al.,_ 2021)](https://doi.org/10.1186/s13059-021-02306-1).
 
@@ -143,13 +141,18 @@ Machine learning models were built using [SIAMCAT](https://siamcat.embl.de/) pip
 
 The machine learning scripts were run in the following order:
 
-5.1_train_models_species.R
-5.1_train_models_functions.R
+4.1_train_models_species.R
+4.1_train_models_functions.R
 
-5.2_model_predictions.R
+4.2_model_predictions.R
 
-5.3_ml_figures.R
+4.3_ml_figures.R
 
+## Contact
+E-mail: [Erika Dvarionaite](mailto:erika.dvarionaite@outlook.com)
+
+
+Extra
 
 ### Set-up & Data preparation
 
@@ -166,5 +169,10 @@ The machine learning scripts were run in the following order:
 | `import_feat_suffix(filename, suffix)` | Import feature table & attach suffix (e.g. `import_feat_suffix("kegg_relab.tsv", kegg)` |
 | `load_meta()` | Import metadata file |
 
-## Contact
-E-mail: [Erika Dvarionaite](mailto:erika.dvarionaite@outlook.com)
+### 4. Association testing
+
+#### 4.1 SIAMCAT/Wirbel
+
+#### 4.2 MaAsLin2
+
+R package, [MaAslin2](https://huttenhower.sph.harvard.edu/maaslin/), was used to determine multivariable associations between metadata and microbial features [(Mallick _et al.,_ 2021)](https://doi.org/10.1186/s13059-021-02306-1). It is based on general linear models.
