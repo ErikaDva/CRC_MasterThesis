@@ -72,7 +72,7 @@ The publicly available raw sequencing data from CRC studies were used in this an
 Command line was used to pre-process raw data and to perform taxonomic and functional profiling of high-quality reads.
 
 [TrimGalore (v.0.6.5) wrapper package](https://github.com/FelixKrueger/TrimGalore) with filtering parameters: 
-`--stringency 5 -- length 45 --quality 20 --max_n 2 --trim-n --paired)`  
+`--stringency 5 -- length 45 --quality 20 --max_n 2 --trim-n --paired`  
 
 Bowtie2 (v.2.3.4.1) was used to align reads to the human genome (hg19) and discard contaminant reads from the host.
 
