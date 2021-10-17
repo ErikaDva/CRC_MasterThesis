@@ -144,29 +144,3 @@ The machine learning scripts were run in the following order:
 ## Contact
 E-mail: [Erika Dvarionaite](mailto:erika.dvarionaite@outlook.com)  
 Twitter: [erika_dva](https://twitter.com/erika_dva)
-
-
-Extra
-
-### Set-up & Data preparation
-
-1. import_feat_suffix()
-2. remove_name_and_export()
-3. 
-
-## Summary of Custom functions
-
-| Function | Description |
-| --- | --- |
-| `load_kegg()` | Import feature table with KEGG annotations (`"kegg"` can be substituted with `"pfam"`, `"eggnog"`, `"level4ec"` & `"go"` as required) |
-| `load_meta()` | Import metadata file |
-| `import_feat_suffix(filename, suffix)` | Import feature table & attach suffix (e.g. `import_feat_suffix("kegg_relab.tsv", kegg)` |
-| `load_meta()` | Import metadata file |
-
-### 4. Association testing
-
-#### 4.1 SIAMCAT/Wirbel
-
-#### 4.2 MaAsLin2
-
-R package, [MaAslin2](https://huttenhower.sph.harvard.edu/maaslin/), was used to determine multivariable associations between metadata and microbial features [(Mallick _et al.,_ 2021)](https://doi.org/10.1186/s13059-021-02306-1). It is based on general linear models.
