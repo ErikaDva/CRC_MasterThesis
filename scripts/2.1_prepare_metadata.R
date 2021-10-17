@@ -323,13 +323,9 @@ print(table(meta.all.stages.crc$Group, meta.all.stages.crc$Study))
 
 ############################### SAVE METADATA ##################################
 
-write_tsv(meta.all, file = '../data/meta/meta.all_17.tsv')
-save(meta.all, file = '../data/meta/meta.all_17.RData')
-write_tsv(meta.all.stages.crc, file = '../data/meta/meta.crc.2.tsv')
-save(meta.all.stages.crc, file = '../data/meta/meta.crc.2.Rdata')
+write_tsv(meta.all, file = '../data/meta/meta.all.tsv')
+save(meta.all, file = '../data/meta/meta.all.RData')
+write_tsv(meta.all.stages.crc, file = '../data/meta/meta.crc.tsv')
+save(meta.all.stages.crc, file = '../data/meta/meta.crc.Rdata')
 
 #################################   DONE   #####################################
-
-old_meta <- meta_all_stages_crc[,1] %>% column_to_rownames(var="Sample_ID") %>% rownames()
-new_meta <- meta.all.stages.crc[,1] %>% column_to_rownames(var="Sample_ID") %>% rownames()
-setdiff(new_meta, old_meta)
