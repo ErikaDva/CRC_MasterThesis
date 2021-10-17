@@ -65,7 +65,6 @@ for (study.train in studies){
                            tibble(study.train=study.train, 
                                   study.test=study.test,
                                   AUC=c(temp$auc)))
-    
   }
 }
 
