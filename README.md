@@ -146,4 +146,4 @@ Machine learning models were built using [SIAMCAT](https://siamcat.embl.de/) pip
 | `load_meta()` | Import metadata file |
 
 ## Contact
-E-mail: [Erika Dvarionaite](erika.dvarionaite@outlook.com)
+E-mail: [Erika Dvarionaite](mailto:erika.dvarionaite@outlook.com)
