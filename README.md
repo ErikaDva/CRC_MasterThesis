@@ -129,7 +129,7 @@ Secondly, the feature tables were cleaned and filtered to remove low-abundant fe
 
 #### Ordination with ampvis2
 
-R package, [ampvis2](https://madsalbertsen.github.io/ampvis2/index.html), was utilised for explorative analysis of functional and taxonomic feature tables. The package was originally developed for visualing amplicon data, however, it is capable of dealing with shotgun metagenomics data.
+R package, [ampvis2](https://madsalbertsen.github.io/ampvis2/index.html), was utilised for explorative analysis of functional and taxonomic feature tables. The package was originally developed for visualing amplicon data, however, it is capable of dealing with shotgun metagenomics data.\
 [`3_explorative_analysis_ampvis2.R`](https://github.com/ErikaDva/CRC_MasterThesis/blob/main/scripts/3_explorative_analysis_ampvis2.R)
 
 ### 4. Machine learning models
