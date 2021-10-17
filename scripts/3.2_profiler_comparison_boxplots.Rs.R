@@ -1,6 +1,6 @@
 # ######################################################################
 #
-##  4.2 Boxplots for profiler summary
+##  Boxplots for profiler summary
 #
 # ######################################################################
 
@@ -30,7 +30,7 @@ eggnog_relab <- read.table("../data/eggnog/filtered_eggnog_full.tsv", sep = "\t"
 pfam_relab <- read.table("../data/pfam/filtered_pfam_full.tsv", sep = "\t", stringsAsFactors = F, header = T, check.names = F, row.names = 1, quote ="", fill = F)
 level4ec_relab <- read.table("../data/level4ec/filtered_level4ec_full.tsv", sep = "\t", stringsAsFactors = F, header = T, check.names = F, row.names = 1, quote ="", fill = F)
 species_relab <- read.table('../data/species/filtered.species.NEW.tsv', sep = "\t", stringsAsFactors = F, header = T, check.names = F, row.names = 1, quote ="", fill = F)
-meta.all <- read_tsv(file = '../data/meta/meta.crc.2.tsv')
+meta.all <- read_tsv(file = '../data/meta/meta.crc.tsv')
 
 # ##############################################################################
 # Study information
