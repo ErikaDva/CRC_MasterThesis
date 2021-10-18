@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # 3. Merging outputs produced for each sample (relab/cpm)
+# arg1 = units (relab/cpm), arg2 = functional category (i.e. kegg, level4ec, go, pfam, eggnog)
+
 module load HUManN/3.0.0a4-foss-2020b-Python-3.8.6
 
 start=`date +%s`
