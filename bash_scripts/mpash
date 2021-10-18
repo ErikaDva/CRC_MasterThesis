@@ -15,8 +15,6 @@ do
 input1=$f
 bn=$(basename ${f%_sorted_1.fastq.gz})
 
-#printf "\n$input1 will now be processed"
-
 metaphlan $input1 --input_type fastq --nproc $1 --tmp_dir /scratch --bowtie2db /space/databases/metaphlan/db_2020-10-26 --bowtie2out /srv/MA/users/edvari19/processed_data/metaphlan/bowtie/${bn}.bowtie2.bz2 -o /srv/MA/users/edvari19/processed_data/metaphlan/output/${bn}_mphlan.txt
 
 echo "File $n: $bn has now been processed"
